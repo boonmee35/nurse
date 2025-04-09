@@ -51,61 +51,57 @@ const Data = () => {
 
     return (
         <div className="p-6 space-y-6">
-            {/* Section: ข้อมูลสถิติ */}
-            <div className="grid grid-cols-3 gap-3">
-                {data.map((item) => (
-                    <div
-                        key={item.id}
-                        className="bg-gradient-to-b from-orange-500 to-purple-500 text-white p-6 rounded-lg flex flex-row items-center justify-between"
-                    >
-                        {item.icon}
-                        <div className="flex flex-col items-end">
-                            <span className="text-6xl">{item.number}</span>
-                            <span className="text-xl mt-2">{item.label}</span>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {/* Section: กราฟ */}
-            <div className="grid grid-cols-10 gap-3">
-                {/* กราฟสถิติการเข้าเรียน (30%) */}
-                <div className="bg-white p-6 rounded-lg shadow-md col-span-4">
-                    <h2 className="text-lg font-semibold mb-4">สถิติการเข้าเรียน</h2>
-                    <ResponsiveContainer width="100%" height={280}>
-                        <LineChart data={dataAttend}>
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="day" />
-                            <YAxis />
-                            <Tooltip />
-                            <Legend />
-                            <Line type="monotone" dataKey="attendance" stroke="#ff4500" dot={{ r: 4 }} />
-                        </LineChart>
-                    </ResponsiveContainer>
-                </div>
-
-                {/* กราฟสถิติคะแนน (70%) */}
-                <div className="bg-white p-6 rounded-lg shadow-md col-span-6">
-                    <h2 className="text-lg font-semibold mb-4">สถิติคะแนน</h2>
-                    <ResponsiveContainer width="100%" height={280}>
-                        <BarChart data={scoreData}>
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="month" />
-                            <YAxis />
-                            <Tooltip />
-                            <Legend align="right" verticalAlign="top" />
-
-                            {/* กราฟแท่ง */}
-                            <Bar dataKey="highest" fill="#8a2be2" name="คะแนนสูงสุด" radius={[10, 10, 0, 0]} barSize={10} />
-                            <Bar dataKey="lowest" fill="#ff4500" name="คะแนนต่ำสุด" radius={[10, 10, 0, 0]} barSize={10}/>
-
-                            
-                        </BarChart>
-                    </ResponsiveContainer>
-
+    {/* Section: ข้อมูลสถิติ */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {data.map((item) => (
+            <div
+                key={item.id}
+                className="bg-gradient-to-b from-orange-500 to-purple-500 text-white p-6 rounded-lg flex flex-row items-center justify-between"
+            >
+                {item.icon}
+                <div className="flex flex-col items-end">
+                    <span className="text-4xl md:text-5xl lg:text-6xl">{item.number}</span>
+                    <span className="text-lg md:text-xl mt-2">{item.label}</span>
                 </div>
             </div>
+        ))}
+    </div>
+
+    {/* Section: กราฟ */}
+    <div className="grid grid-cols-1 lg:grid-cols-10 gap-4">
+        {/* กราฟสถิติการเข้าเรียน (30%) */}
+        <div className="bg-white p-6 rounded-lg shadow-md col-span-1 lg:col-span-4">
+            <h2 className="text-lg font-semibold mb-4">สถิติการเข้าเรียน</h2>
+            <ResponsiveContainer width="100%" height={280}>
+                <LineChart data={dataAttend}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="day" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line type="monotone" dataKey="attendance" stroke="#ff4500" dot={{ r: 4 }} />
+                </LineChart>
+            </ResponsiveContainer>
         </div>
+
+        {/* กราฟสถิติคะแนน (70%) */}
+        <div className="bg-white p-6 rounded-lg shadow-md col-span-1 lg:col-span-6">
+            <h2 className="text-lg font-semibold mb-4">สถิติคะแนน</h2>
+            <ResponsiveContainer width="100%" height={280}>
+                <BarChart data={scoreData}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="month" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend align="right" verticalAlign="top" />
+                    <Bar dataKey="highest" fill="#8a2be2" name="คะแนนสูงสุด" radius={[10, 10, 0, 0]} barSize={10} />
+                    <Bar dataKey="lowest" fill="#ff4500" name="คะแนนต่ำสุด" radius={[10, 10, 0, 0]} barSize={10} />
+                </BarChart>
+            </ResponsiveContainer>
+        </div>
+    </div>
+</div>
+
     );
 };
 

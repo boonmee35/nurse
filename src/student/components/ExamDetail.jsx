@@ -1,10 +1,37 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation,useNavigate } from "react-router-dom";
 import { Clock } from "lucide-react";
+import Swal from "sweetalert2";
 
 function ExamDetail() {
   const location = useLocation();
   const lesson = location.state?.lesson;
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+    Swal.fire({
+      title: "ยืนยันการส่งคำตอบ?",
+      text: "คุณต้องการส่งคำตอบหรือไม่",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "ส่งคำตอบ",
+      cancelButtonText: "ยกเลิก",
+      confirmButtonColor: "#f97316",
+      cancelButtonColor: "#d1d5db",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          icon: "success",
+          title: "ส่งคำตอบเรียบร้อย",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        setTimeout(() => {
+          navigate("/student/exams");
+        }, 1600);
+      }
+    });
+  };
 
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -85,10 +112,10 @@ function ExamDetail() {
 
         {/* ปุ่ม */}
       <div className="flex justify-end space-x-4 mt-4">
-        <button className="px-6 py-2 bg-gray-300 text-black rounded-md hover:bg-gray-400">
+        <button className="px-6 py-2 bg-gray-300 text-black rounded-md hover:bg-gray-400" onClick={() => navigate("/student/exams")} >
           กลับ
         </button>
-        <button className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600">
+        <button className="px-6 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600" onClick={() => handleSubmit()}>
           ส่งคำตอบ
         </button>
       </div>

@@ -80,7 +80,7 @@ function Home() {
                     <Route path="profile" element={<Profile/>} />
                     <Route path="lessons" element={<LessonList />} />
                     <Route path="lessons-detail" element={<LessonDetail />} />
-                    <Route path="lessons-detail-content" element={<LessonContent />} />
+                    <Route path="lessons-detail/content" element={<LessonContent />} />
                     <Route path="exams" element={<Exam />} />
                     <Route path="exams-detail" element={<ExamDetail />} />
                     <Route path="messages" element={<ChatApp />} />

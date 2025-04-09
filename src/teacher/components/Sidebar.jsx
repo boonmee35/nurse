@@ -13,7 +13,12 @@ import { Link, useLocation } from 'react-router-dom';
 const Sidebar = ({ toggleSidebar, isSidebarOpen }) => {
   const location = useLocation();
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => {
+    if (path === '/teacher') {
+      return location.pathname === path;
+    }
+    return location.pathname.startsWith(path);
+  };
 
   const linkClass = (path) => `
     flex items-center gap-2 w-61 px-4 py-2 font-medium transition-all
@@ -37,7 +42,20 @@ const Sidebar = ({ toggleSidebar, isSidebarOpen }) => {
           <li><Link to="/teacher" className={linkClass('/teacher')}><AiFillHome className="text-lg" /><span>Dashboard</span></Link></li>
           <li><Link to="/teacher/lessons" className={linkClass('/teacher/lessons')}><FaBook className="text-lg" /><span>บทเรียน</span></Link></li>
           <li><Link to="/teacher/exams" className={linkClass('/teacher/exams')}><FaPen className="text-lg" /><span>ข้อสอบและแบบประเมิน</span></Link></li>
-          <li><Link to="/teacher/messages" className={linkClass('/teacher/messages')}><FaComment className="text-lg" /><span>ข้อความ</span></Link></li>
+          <li>
+  <Link to="/teacher/messages" className={linkClass('/teacher/messages')}>
+    <div className="flex items-center gap-2 relative w-full">
+      <FaComment className="text-lg" />
+      <span>ข้อความ</span>
+      <span className={`
+        absolute -right-1 -top-0 text-xs font-bold px-2 py-0.5 rounded-full
+        ${isActive('/teacher/messages') ? 'bg-orange-500 text-white' : 'bg-white text-orange-500'}
+      `}>
+        8
+      </span>
+    </div>
+  </Link>
+</li>
         </ul>
 
         <ul className="absolute bottom-6 w-full space-y-2">

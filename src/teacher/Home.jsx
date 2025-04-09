@@ -4,6 +4,17 @@ import { Routes, Route } from 'react-router-dom';
 import { FaBars, FaSearch } from 'react-icons/fa';
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react';
 import Dashboard from './pages/Dashboard';
+import Lessons from './pages/Lessons';
+import LessonDetail from './components/LessonDetail';
+import AddLessonContent from './components/AddLessonContent';
+import AddLessonOverview from './components/AddLessonOverview';
+import ChapterDetail from './components/ChapterDetail';
+import ChatApp from './pages/ChatApp';
+import Exams from './pages/Exams';
+import QuizCreationForm from './components/QuizCreationForm';
+import QuizInterface from './components/QuizInterface';
+import QuizResultsReview from './components/QuizResultsReview';
+import QuizResultsSummary from './components/QuizResultsSummary';
 
 function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -70,7 +81,19 @@ function Home() {
                 {/* 🔶 Content Route */}
                 <Routes>
                     <Route path="/" element={<Dashboard/>} />
+                    <Route path="lessons" element={<Lessons />} />
+                    <Route path="lessons/lessons-detail" element={<LessonDetail />} />
+                    <Route path="lessons/add-overview" element={<AddLessonOverview />} />
+                    <Route path="lessons/add-content" element={<AddLessonContent />} />
+                    <Route path="lessons/lessons-detail/chapter-detail" element={<ChapterDetail />} />
+                    <Route path="exams" element={<Exams />} />
+                    <Route path="exams/QuizCreationForm" element={<QuizCreationForm />} />
+                    <Route path="exams/QuizInterface" element={<QuizInterface />} />
+                    <Route path="exams/QuizInterface/QuizResultsReview" element={<QuizResultsReview />} />
+                    <Route path="exams/QuizInterface/QuizResultsReview/QuizResultsSummary" element={<QuizResultsSummary />} />
+                    <Route path='messages' element={<ChatApp />} />
                     <Route path="*" element={<div>ไม่พบหน้านี้</div>} />
+                    
                 </Routes>
             </div>
         </div>

@@ -77,7 +77,7 @@ function LessonContent() {
           บทเรียน
         </Link>{" "}
         &gt;{" "}
-        <Link to="/student/lesson-detail" className="hover:underline">
+        <Link to="/student/lessons-detail" state={{ lesson }} className="hover:underline">
           {lesson?.title}
         </Link>{" "}
         &gt; {currentUnit.title}

@@ -43,7 +43,20 @@ const Sidebar = ({ toggleSidebar, isSidebarOpen }) => {
           <li><Link to="/student/profile" className={linkClass('/student/profile')}><FaUser className="text-lg" /><span>โปรไฟล์</span></Link></li>
           <li><Link to="/student/lessons" className={linkClass('/student/lessons')}><FaBook className="text-lg" /><span>บทเรียน</span></Link></li>
           <li><Link to="/student/exams" className={linkClass('/student/exams')}><FaPen className="text-lg" /><span>ข้อสอบและประเมินผล</span></Link></li>
-          <li><Link to="/student/messages" className={linkClass('/student/messages')}><FaComment className="text-lg" /><span>ข้อความ</span></Link></li>
+          <li>
+            <Link to="/student/messages" className={linkClass('/student/messages')}>
+              <div className="flex items-center gap-2 relative w-full">
+                <FaComment className="text-lg" />
+                <span>ข้อความ</span>
+                <span className={`
+                  absolute -right-1 -top-0 text-xs font-bold px-2 py-0.5 rounded-full
+                  ${isActive('/student/messages') ? 'bg-orange-500 text-white' : 'bg-white text-orange-500'}
+                `}>
+                  8
+                </span>
+              </div>
+            </Link>
+          </li>
         </ul>
 
         <ul className="absolute bottom-6 w-full space-y-2">
