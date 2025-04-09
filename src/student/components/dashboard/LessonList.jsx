@@ -13,7 +13,7 @@ function LessonList() {
           lessons: 15,
           duration: { hours: 10, minutes: 5 },
           progress: 20,
-          thumbnail: "/src/assets/lesson.png",
+          thumbnail: "/image/lesson.png",
         },
         {
           id: 2,
@@ -24,7 +24,7 @@ function LessonList() {
           lessons: 12,
           duration: { hours: 6, minutes: 5 },
           progress: 50,
-          thumbnail: "/src/assets/lesson2.png",
+          thumbnail: "/image/lesson2.png",
         },
         {
           id: 3,
@@ -35,7 +35,7 @@ function LessonList() {
           lessons: 6,
           duration: { hours: 1, minutes: 25 },
           progress: 80,
-          thumbnail: "/src/assets/lesson3.png",
+          thumbnail: "/image/lesson3.png",
         },
         {
           id: 4,
@@ -46,7 +46,7 @@ function LessonList() {
           lessons: 8,
           duration: { hours: 3, minutes: 10 },
           progress: 10,
-          thumbnail: "/src/assets/lesson4.png",
+          thumbnail: "/image/lesson4.png",
         },
       ])
     

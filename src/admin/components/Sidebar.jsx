@@ -17,7 +17,7 @@ const Sidebar = ({ toggleSidebar, isSidebarOpen }) => {
                 </button>
 
                 <div className="mb-6 flex justify-center">
-                    <img src="/src/assets/logo-w.png" alt="Logo" className="mx-auto" />
+                    <img src="/image/logo-w.png" alt="Logo" className="mx-auto" />
                 </div>
 
                 <ul className="absolute w-61 space-y-2">

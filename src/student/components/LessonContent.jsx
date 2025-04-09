@@ -31,15 +31,15 @@ function LessonContent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const courseUnits = [
-    { id: 1, title: "บทที่1 : บทนำ", image: "/src/assets/lesson4.png" },
-    { id: 2, title: "บทที่2 : แชมเปี้ยน", image: "/src/assets/lesson5.png" },
-    { id: 3, title: "บทที่3 : ทักษะเบื้องต้น", image: "/src/assets/lesson.png" },
-    { id: 4, title: "บทที่4 : พฤติกรรมของผู้เรียน", image: "/src/assets/lesson2.png" },
-    { id: 5, title: "บทที่5 : เทคนิคขั้นสูง", image: "/src/assets/lesson3.png" },
-    { id: 6, title: "บทที่6 : แชมเปี้ยน", image: "/src/assets/lesson4.png" },
-    { id: 7, title: "บทที่7 : ทักษะเบื้องต้น", image: "/src/assets/lesson5.png" },
-    { id: 8, title: "บทที่8 : พฤติกรรมของผู้เรียน", image: "/src/assets/lesson.png" },
-    { id: 9, title: "บทที่9 : เทคนิคขั้นสูง", image: "/src/assets/lesson2.png" },
+    { id: 1, title: "บทที่1 : บทนำ", image: "/image/lesson4.png" },
+    { id: 2, title: "บทที่2 : แชมเปี้ยน", image: "/image/lesson5.png" },
+    { id: 3, title: "บทที่3 : ทักษะเบื้องต้น", image: "/image/lesson.png" },
+    { id: 4, title: "บทที่4 : พฤติกรรมของผู้เรียน", image: "/image/lesson2.png" },
+    { id: 5, title: "บทที่5 : เทคนิคขั้นสูง", image: "/image/lesson3.png" },
+    { id: 6, title: "บทที่6 : แชมเปี้ยน", image: "/image/lesson4.png" },
+    { id: 7, title: "บทที่7 : ทักษะเบื้องต้น", image: "/image/lesson5.png" },
+    { id: 8, title: "บทที่8 : พฤติกรรมของผู้เรียน", image: "/image/lesson.png" },
+    { id: 9, title: "บทที่9 : เทคนิคขั้นสูง", image: "/image/lesson2.png" },
   ];
 
   const currentUnit =

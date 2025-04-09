@@ -96,7 +96,7 @@ function ChatApp() {
     {
       id: 1,
       name: "Esther Howard",
-      avatar: "/src/assets/avatar6.jpg",
+      avatar: "/image/avatar6.jpg",
       lastMessage: "The passage experienced a surge in popularity during the...",
       time: "8:10 PM",
       hasNotification: false,
@@ -105,7 +105,7 @@ function ChatApp() {
     {
       id: 2,
       name: "กฤษณเลิศ อิษฏ์เลิศอิ อิษฏ์เลิศอิ",
-      avatar: "/src/assets/lesson.png",
+      avatar: "/image/lesson.png",
       lastMessage: "The passage experienced a surge in popularity during the...",
       time: "8:10 PM",
       hasNotification: true,
@@ -114,7 +114,7 @@ function ChatApp() {
     {
       id: 3,
       name: "Savannah Nguyen",
-      avatar: "/src/assets/avatar7.jpg",
+      avatar: "/image/avatar7.jpg",
       lastMessage: "The passage experienced a surge in popularity during the...",
       time: "8:10 PM",
       hasNotification: false,
@@ -123,7 +123,7 @@ function ChatApp() {
     {
       id: 4,
       name: "กฤษณเลิศ อิษฏ์เลิศอิ อิษฏ์เลิศอิ",
-      avatar: "/src/assets/lesson2.png",
+      avatar: "/image/lesson2.png",
       lastMessage: "The passage experienced a surge in popularity during the...",
       time: "8:10 PM",
       hasNotification: true,
@@ -132,7 +132,7 @@ function ChatApp() {
     {
       id: 5,
       name: "Bessie Cooper",
-      avatar: "/src/assets/avatar8.jpg",
+      avatar: "/image/avatar8.jpg",
       lastMessage: "The passage experienced a surge in popularity during the...",
       time: "8:10 PM",
       hasNotification: false,
@@ -141,7 +141,7 @@ function ChatApp() {
     {
       id: 6,
       name: "Theresa Webb",
-      avatar: "/src/assets/avatar9.jpg",
+      avatar: "/image/avatar9.jpg",
       lastMessage: "The passage experienced a surge in popularity during the...",
       time: "8:10 PM",
       hasNotification: true,
@@ -150,11 +150,11 @@ function ChatApp() {
   ]
 
   const topContacts = [
-    { id: 1, avatar: "/src/assets/avatar.jpg" },
-    { id: 2, avatar: "/src/assets/avatar2.jpg" },
-    { id: 3, avatar: "/src/assets/avatar3.jpg" },
-    { id: 4, avatar: "/src/assets/avatar4.jpg" },
-    { id: 5, avatar: "/src/assets/avatar5.jpg" },
+    { id: 1, avatar: "/image/avatar.jpg" },
+    { id: 2, avatar: "/image/avatar2.jpg" },
+    { id: 3, avatar: "/image/avatar3.jpg" },
+    { id: 4, avatar: "/image/avatar4.jpg" },
+    { id: 5, avatar: "/image/avatar5.jpg" },
   ]
 
   const messages = [
@@ -162,7 +162,7 @@ function ChatApp() {
       id: 1,
       text: "The passage experiences a surge",
       sender: "Esther Howard",
-      avatar: "/src/assets/avatar6.jpg",
+      avatar: "/image/avatar6.jpg",
       time: "09:01 PM",
       isOwn: false,
     },
@@ -170,7 +170,7 @@ function ChatApp() {
       id: 2,
       text: "Creation ipsum is simply dummy text of the printing and typesetting industry.",
       sender: "Esther Howard",
-      avatar: "/src/assets/avatar6.jpg",
+      avatar: "/image/avatar6.jpg",
       time: "09:01 PM",
       isOwn: false,
     },
@@ -186,7 +186,7 @@ function ChatApp() {
       id: 4,
       text: "Creation ipsum is simply dummy text of the printing and typesetting industry.",
       sender: "Esther Howard",
-      avatar: "/src/assets/avatar6.jpg",
+      avatar: "/image/avatar6.jpg",
       time: "09:04 PM",
       isOwn: false,
     },

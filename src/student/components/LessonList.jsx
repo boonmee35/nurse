@@ -7,7 +7,7 @@ function LessonList() {
     {
       id: "1",
       subject: "รายวิชา1",
-      image: "/src/assets/lesson.png",
+      image: "/image/lesson.png",
       title: "โมเดิล อบรมโมเดิล อบรมเป็นองค์ความรู้เบื้องต้นภาษาเขียน",
       description: "สะสมสาธิตและเตรียมความ โมเดิล ต้องกรุณาทราบว่า...",
       duration: "10 ชั่วโมง 5 นาที",
@@ -16,7 +16,7 @@ function LessonList() {
     {
       id: "2",
       subject: "รายวิชา2",
-      image: "/src/assets/lesson2.png",
+      image: "/image/lesson2.png",
       title: "โมเดิล อบรมโมเดิล อบรมเป็นองค์ความรู้เบื้องต้นภาษาเขียน",
       description: "สะสมสาธิตและเตรียมความ โมเดิล ต้องกรุณาทราบว่า...",
       duration: "10 ชั่วโมง 5 นาที",
@@ -25,7 +25,7 @@ function LessonList() {
     {
       id: "3",
       subject: "รายวิชา1",
-      image: "/src/assets/lesson3.png",
+      image: "/image/lesson3.png",
       title: "โมเดิล อบรมโมเดิล อบรมเป็นองค์ความรู้เบื้องต้นภาษาเขียน",
       description: "สะสมสาธิตและเตรียมความ โมเดิล ต้องกรุณาทราบว่า...",
       duration: "10 ชั่วโมง 5 นาที",
@@ -34,7 +34,7 @@ function LessonList() {
     {
       id: "4",
       subject: "รายวิชา3",
-      image: "/src/assets/lesson4.png",
+      image: "/image/lesson4.png",
       title: "โมเดิล อบรมโมเดิล อบรมเป็นองค์ความรู้เบื้องต้นภาษาเขียน",
       description: "สะสมสาธิตและเตรียมความ โมเดิล ต้องกรุณาทราบว่า...",
       duration: "10 ชั่วโมง 5 นาที",
@@ -43,7 +43,7 @@ function LessonList() {
     {
       id: "5",
       subject: "รายวิชา3",
-      image: "/src/assets/lesson.png",
+      image: "/image/lesson.png",
       title: "โมเดิล อบรมโมเดิล อบรมเป็นองค์ความรู้เบื้องต้นภาษาเขียน",
       description: "สะสมสาธิตและเตรียมความ โมเดิล ต้องกรุณาทราบว่า...",
       duration: "10 ชั่วโมง 5 นาที",

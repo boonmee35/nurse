@@ -46,7 +46,7 @@ function Login() {
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-bl from-orange-600 to-purple-600">
       <div className="bg-white shadow-lg rounded-lg p-8 w-150 text-center">
         <img
-          src="/src/assets/logo.png"
+          src="/image/logo.png"
           alt="Nurse CMU"
           className="mx-auto w-70"
         />
