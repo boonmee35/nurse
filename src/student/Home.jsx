@@ -4,11 +4,11 @@ import { Routes, Route } from 'react-router-dom';
 import { FaBars, FaSearch } from 'react-icons/fa';
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/react';
 import Dashboard from './pages/Dashboard';
-import Profile from './pages/profile';
+import Profile from './pages/Profile';
 import LessonList from './components/LessonList';
 import LessonDetail from './components/LessonDetail';
 import LessonContent from './components/LessonContent';
-import Exam from './pages/exam';
+import Exam from './pages/Exam';
 import ExamDetail from './components/ExamDetail';
 import ChatApp from './pages/ChatApp';
 
