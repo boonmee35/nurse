@@ -131,15 +131,15 @@ function LessonContent() {
           <div className="bg-white rounded-xl p-4 shadow-sm flex items-center justify-between">
             <div className="flex -space-x-2">
               <img
-                src="/src/assets/avatar.jpg"
+                src="/image/avatar.jpg"
                 className="w-8 h-8 rounded-full border-2 border-white"
               />
               <img
-                src="/src/assets/avatar2.jpg"
+                src="/image/avatar2.jpg"
                 className="w-8 h-8 rounded-full border-2 border-white"
               />
               <img
-                src="/src/assets/avatar3.jpg"
+                src="/image/avatar3.jpg"
                 className="w-8 h-8 rounded-full border-2 border-white"
               />
             </div>
@@ -243,16 +243,16 @@ function LessonContent() {
                 {
                   name: "ชาวี อัมรากรณ์",
                   role: "ครูผู้สอน",
-                  img: "/src/assets/avatar.jpg",
+                  img: "/image/avatar.jpg",
                 },
-                { name: "David Wayne", img: "/src/assets/avatar2.jpg" },
-                { name: "Edward Mint", img: "/src/assets/avatar3.jpg" },
-                { name: "May HG. Kang", img: "/src/assets/avatar4.jpg" },
-                { name: "Lily Dare", img: "/src/assets/avatar5.jpg" },
-                { name: "Dennis Dang", img: "/src/assets/avatar6.jpg" },
-                { name: "Cayla Raiji", img: "/src/assets/avatar7.jpg" },
-                { name: "Erin Turcotte", img: "/src/assets/avatar8.jpg" },
-                { name: "Bob Walter", img: "/src/assets/avatar9.jpg" },
+                { name: "David Wayne", img: "/image/avatar2.jpg" },
+                { name: "Edward Mint", img: "/image/avatar3.jpg" },
+                { name: "May HG. Kang", img: "/image/avatar4.jpg" },
+                { name: "Lily Dare", img: "/image/avatar5.jpg" },
+                { name: "Dennis Dang", img: "/image/avatar6.jpg" },
+                { name: "Cayla Raiji", img: "/image/avatar7.jpg" },
+                { name: "Erin Turcotte", img: "/image/avatar8.jpg" },
+                { name: "Bob Walter", img: "/image/avatar9.jpg" },
               ].map((member, index) => (
                 <div
                   key={index}
